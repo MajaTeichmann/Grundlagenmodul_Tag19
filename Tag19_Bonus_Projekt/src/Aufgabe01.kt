@@ -201,6 +201,76 @@ fun gameNurRunde1() {
             )
 
             rundenGespielt += 1
+        }else if (gewaehlteWaffe == "2") {
+            println("Du hast ${gewaehlteWaffe} gewählt!")
+            println("Lass uns deine HP und Stärke deiner Waffe würfeln...")
+            println("")
+            println("HP: ${hpHero}")
+            println("Schaden: ${schadenWaffe1FuerKampf}")
+            println("")
+            println("Nun bist du bereit gegen den Drachen zu kämpfen!")
+            println("Der Kampf beginnt in...")
+            println(
+                """
+                |3
+                |2
+                |1
+                |GO!""".trimMargin()
+            )
+            println("")
+            println(
+                """
+                        ${nameOfHero}                                                   ${nameOfDragon}
+            Schaden:    ${schadenWaffe1FuerKampf}                                       ${schadenDragon}
+            HP:         ${hpHero}                   vs.                                 ${hpDragon}""".trimIndent()
+            )
+            println("")
+            neueHpDragon = hpDragon - schadenWaffe1FuerKampf - schadenWaffe1FuerKampf
+            neueHpHero = hpHero - schadenDragon
+            println("")
+            println(
+                """
+            |Neue Stats:                    HP:
+            |${nameOfHero}      ->      ${neueHpHero}
+            |${nameOfDragon}    ->      ${neueHpDragon}""".trimMargin()
+            )
+
+            rundenGespielt += 1
+        }else if (gewaehlteWaffe == "3") {
+            println("Du hast ${gewaehlteWaffe} gewählt!")
+            println("Lass uns deine HP und Stärke deiner Waffe würfeln...")
+            println("")
+            println("HP: ${hpHero}")
+            println("Schaden: ${schadenWaffe1FuerKampf}")
+            println("")
+            println("Nun bist du bereit gegen den Drachen zu kämpfen!")
+            println("Der Kampf beginnt in...")
+            println(
+                """
+                |3
+                |2
+                |1
+                |GO!""".trimMargin()
+            )
+            println("")
+            println(
+                """
+                        ${nameOfHero}                                                   ${nameOfDragon}
+            Schaden:    ${schadenWaffe1FuerKampf}                                       ${schadenDragon}
+            HP:         ${hpHero}                   vs.                                 ${hpDragon}""".trimIndent()
+            )
+            println("")
+            neueHpDragon = hpDragon - schadenWaffe1FuerKampf - schadenWaffe1FuerKampf
+            neueHpHero = hpHero - schadenDragon
+            println("")
+            println(
+                """
+            |Neue Stats:                    HP:
+            |${nameOfHero}      ->      ${neueHpHero}
+            |${nameOfDragon}    ->      ${neueHpDragon}""".trimMargin()
+            )
+
+            rundenGespielt += 1
         }
     }
     return
